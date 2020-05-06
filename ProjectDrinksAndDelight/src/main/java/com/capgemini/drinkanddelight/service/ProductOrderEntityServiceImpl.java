@@ -47,6 +47,8 @@ public class ProductOrderEntityServiceImpl implements ProductOrderEntityServiceI
 		System.out.println("qwertyu");
 		return productorderdaoi.getListOfProductOrderEntity();
 	}
+	
+	
 
 	/*
 	 * This method is used to find the entity by the OrderId from the orderManagement Table.
@@ -135,6 +137,13 @@ public class ProductOrderEntityServiceImpl implements ProductOrderEntityServiceI
 	@Override
 	public Distributor getDistributorDetails(String distributorId) {
 		return productorderdaoi.getDistributorDetails(distributorId);
+	}
+
+	@Override
+	public List<Distributor> getDistributors() {
+		// TODO Auto-generated method stub
+		return productorderdaoi.getDistributors();
+
 	}
 	
 	

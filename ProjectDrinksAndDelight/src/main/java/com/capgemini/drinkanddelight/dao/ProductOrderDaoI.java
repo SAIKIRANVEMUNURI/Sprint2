@@ -9,6 +9,7 @@ public interface ProductOrderDaoI {
 	
 	public void addProductOrderEntity(ProductOrder productorderentity);
 	public List<ProductOrder> getListOfProductOrderEntity();
+	public List<Distributor> getDistributors();
 	public ProductOrder findByOrderId(String orderId);
 	public Boolean deleteProductOrderEntity(String orderId);
 	

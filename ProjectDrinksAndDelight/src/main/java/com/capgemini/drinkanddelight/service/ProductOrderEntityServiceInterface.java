@@ -9,6 +9,8 @@ public interface ProductOrderEntityServiceInterface {
 	
 	public ProductOrder addProductOrderEntity(ProductOrder productorderentity);
 	public List<ProductOrder> getListOfProductOrderEntity();
+	public List<Distributor> getDistributors();
+
 	public ProductOrder findByOrderId(String orderId);
 	public Boolean deleteProductOrderEntity(String orderId) ;
 	public List<ProductOrder> displayProductOrder (String distibutorId);

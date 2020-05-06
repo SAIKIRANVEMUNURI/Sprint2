@@ -61,6 +61,15 @@ public class ProductController {
 			return new ResponseEntity<List<ProductOrder>>(list,HttpStatus.OK);
 	}
 	
+	@GetMapping("/getDistributors")
+    public ResponseEntity<List<Distributor>> getDistributors() throws ProductOrderEntityNotFoundException
+	{
+			List<Distributor> list1 = productorderentityserviceinterface.getDistributors();
+			if(list1 == null)
+				throw new ProductOrderEntityNotFoundException("Sry we not found any data in database");
+			return new ResponseEntity<List<Distributor>>(list1,HttpStatus.OK);
+	}
+	
 	
 	/*
 	 * This is a DeleteMethod(Http) by "OrderId" is used to delete the entity from the database.

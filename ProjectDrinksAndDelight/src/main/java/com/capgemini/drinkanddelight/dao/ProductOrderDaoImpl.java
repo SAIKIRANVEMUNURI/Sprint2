@@ -48,6 +48,14 @@ public class ProductOrderDaoImpl implements ProductOrderDaoI{
 		TypedQuery<ProductOrder> query=entityManager.createQuery(Qstr,ProductOrder.class);
 		return query.getResultList();
 	}
+	
+	public List<Distributor> getDistributors(){
+		String Qstr="SELECT distributorentity from Distributor distributorentity";
+		TypedQuery<Distributor> query=entityManager.createQuery(Qstr,Distributor.class);
+		return query.getResultList();
+	}
+	
+	
 
 	/*
 	 * This method is used to find the entity by the OrderId from the orderManagement Table.

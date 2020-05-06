@@ -16,12 +16,12 @@ public class Distributor implements Serializable{
 	private String distributorId;
 	private String name;
 	private String Address;
-	private double phoneNumber;
+	private String phoneNumber;
 	
 	public Distributor() {}
 
 	
-	public Distributor(String distributorId, String name, String address, double phoneNumber) {
+	public Distributor(String distributorId, String name, String address, String phoneNumber) {
 		super();
 		this.distributorId = distributorId;
 		this.name = name;
@@ -48,10 +48,10 @@ public class Distributor implements Serializable{
 	public void setAddress(String address) {
 		Address = address;
 	}
-	public double getPhoneNumber() {
+	public String getPhoneNumber() {
 		return phoneNumber;
 	}
-	public void setPhoneNumber(double phoneNumber) {
+	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 	
