@@ -1,0 +1,38 @@
+
+<button class="btn btn-secondary" (click)=getListOfProducts()>DisplayTotalOrders</button>
+
+<table  class="table table-striped" align="left" border="3"> 
+    
+  <thead >
+        <tr class="bg-danger"> 
+            <th >OrderID</th>    
+            <th  >DateOfDelivery</th>    
+            <th >DateOfOrder</th>    
+            <th >DeliveryStatus</th> 
+            <th >DistributorID</th>
+            <th >Name</th>    
+            <th >PricePerUnit</th>    
+            <th >QuantityUnit</th> 
+            <th >QuantityValue</th> 
+            <th >TotalPrice</th>
+            <th >WarehouseID</th> 
+              
+   
+          </tr>
+      </thead>  
+      <tbody>
+        <tr *ngFor="let product of list ">  
+          <td >{{product.orderId}}</td> 
+          <td >{{product.dateOfDelivery |date:"dd/MM/yyyy"}}</td>       
+          <td >{{product.dateOfOrder|date:"dd/MM/yyyy"}}</td> 
+          <td>{{product.deliveryStatus }}</td> 
+          <td>{{product.distributorId}}</td> 
+          <td>{{product.name}}</td> 
+          <td>{{product.price_per_unit}}</td> 
+          <td>{{product.quantityUnit}}</td> 
+          <td>{{product.quantityValue}}</td> 
+          <td>{{product.totalPrice}}</td>
+          <td>{{product.warehouseId}}</td> 
+        </tr>   
+      </tbody> 
+      </table>

@@ -1,0 +1,56 @@
+  
+    <fieldset>  
+      <div class="form-group">  
+ Enter the DistributorID:  &nbsp; <input input [(ngModel)]="SearchName" placeholder="DistributorID" > <br>
+</div>
+</fieldset>
+ Enter the DeliveryStatus:&nbsp; <input  input [(ngModel)]="SearchName1" type="text" name="city" list="DeliveryStatus" >
+ <datalist id="DeliveryStatus">
+   <option value="DELIVERED">
+   <option value="ONPROCESS">
+    <option value="DISPATCHED">
+ </datalist>   <br>
+
+ <div class="form-group">  
+  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+ <button  (click)="search()" class="btn btn-success">Search </button> 
+</div>
+
+
+
+
+ <h3 style="text-align: center;"> Product Orders </h3> 
+<table class="table table-striped" border="1"> 
+  
+    <thead>
+        <tr class="bg-danger" > 
+          <th >OrderID</th>    
+          <th  >DateOfDelivery</th>    
+          <th >DateOfOrder</th>    
+          <th >DeliveryStatus</th> 
+          <th >DistributorID</th>
+          <th >Name</th>    
+          <th >PricePerUnit</th>    
+          <th >QuantityUnit</th> 
+          <th >QuantityValue</th> 
+          <th >TotalPrice</th>
+          <th >WarehouseID</th>   
+          </tr>
+      </thead>  
+      <tbody >
+        
+        <tr *ngFor="let product of list |  searchFilter:searchElement:('distributorId') |  searchFilter:searchElement1:('deliveryStatus')  ">  
+          <td >{{product.orderId}}</td> 
+          <td >{{product.dateOfDelivery |date:"dd/MM/yyyy"}}</td>       
+          <td >{{product.dateOfOrder |date:"dd/MM/yyyy"}}</td> 
+          <td>{{product.deliveryStatus}}</td> 
+          <td>{{product.distributorId}}</td> 
+          <td>{{product.name}}</td> 
+          <td>{{product.price_per_unit }}</td> 
+          <td>{{product.quantityUnit}}</td> 
+          <td>{{product.quantityValue}}</td> 
+          <td>{{product.totalPrice}}</td>
+          <td>{{product.warehouseId}}</td>  
+        </tr>   
+      </tbody> 
+      </table>

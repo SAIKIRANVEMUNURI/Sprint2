@@ -1,0 +1,38 @@
+[
+    {
+
+"orderId":"O101",
+"dateOfDelivery":"21-APR-2020",
+  "dateOfOrder":"11-APR-2020",
+  "deliveryStatus":"DELIVERED",
+  "distributorId":"D101",
+  "name":"DELL LAPTOP",
+  "pricePerUnit":"50",
+  "quantityUnit":"20",
+  "quantityValue":"1000",
+  "totalPrice":"1100",
+  "wareHouseId":"W101"
+    },
+    {
+
+        "orderId":"O101",
+        "dateOfDelivery":"21-APR-2020",
+          "dateOfOrder":"11-APR-2020",
+          "deliveryStatus":"DELIVERED",
+          "distributorId":"D101",
+          "name":"DELL LAPTOP",
+          "pricePerUnit":"50",
+          "quantityUnit":"20",
+          "quantityValue":"1000",
+          "totalPrice":"1100",
+          "wareHouseId":"W101"
+            }
+
+
+
+
+
+
+  
+    ]
+    

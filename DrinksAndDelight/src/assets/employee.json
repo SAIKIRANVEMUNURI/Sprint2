@@ -1,0 +1,22 @@
+
+     [
+        {
+        "ID":"1",
+        "Salary":"10000",
+        "name":"satyam",
+       "Department":"cse"
+        },
+        {
+            "ID":"2",
+            "Salary":"20000",
+            "name":"parnav",
+           "Department":"ece"
+            },
+            {
+                "ID":"3",
+                "Salary":"30000",
+                "name":"Amardeep",
+               "Department":"mec"
+             }
+    ]
+  

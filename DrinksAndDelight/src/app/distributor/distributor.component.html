@@ -1,0 +1,27 @@
+
+<button class="btn btn-secondary" (click)=getListOfDistributors()>DisplayDistributors</button>
+
+<table  class="table table-striped" align="left" border="3"> 
+    
+  <thead >
+        <tr class="bg-danger"> 
+            
+            <th >DistributorID</th>
+            <th >Name</th>    
+            <th >Address</th>    
+            <th >Phone Number</th> 
+               
+          </tr>
+      </thead>  
+      <tbody>
+        <tr *ngFor="let distributor of list ">  
+        
+          <td>{{distributor.distributorId}}</td> 
+          <td>{{distributor.name}}</td> 
+          <td>{{distributor.address}}</td> 
+          <td>{{distributor.phoneNumber}}</td> 
+          
+        </tr>   
+      </tbody> 
+      </table>
+
